@@ -26,41 +26,37 @@ h2 {
     width: 300px;
     height: 100%;
     padding: 50px 30px;
-            box-sizing: border-box;
-            transition: all .3s ease-out;
+    box-sizing: border-box;
+    transition: all .3s ease-out;
     text-align: center;
-
-    background-color: #fff;
+    background-color: $menu-bg;
 }
 #menu .brand {
     height: 25px;
     font-size: 40px;
     font-weight: 900;
     line-height: .6;
-    color: #ddd;
+    color: $white;
     text-transform: uppercase;
 }
 #menu ul {
     padding: 0;
     margin-top: 30px;
+    list-style-type: none;
 }
 
 #menu ul li a {
     display: block;
     font-weight: 900;
     line-height: 50px;
-            transition: all .2s ease-out;
+    transition: all .2s ease-out;
     text-decoration: none;
     text-transform: uppercase;
+    color: $white;
+}
 
-    color: #232629;
-    border-top: 1px solid #eee;
-}
-#menu ul li:last-child a {
-    border-bottom: 1px solid #eee;
-}
 #menu ul li a:hover {
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 body.open #menu {
     left: 0;
@@ -68,66 +64,49 @@ body.open #menu {
 /* MAIN PAGE */
 .page-wrap {
     padding: 50px;
-            box-sizing: border-box;
-            transition: all .3s ease-out;
+    box-sizing: border-box;
+    transition: all .3s ease-out;
 }
 body.open .page-wrap {
     margin-left: 300px;
 }
-
-/* MENU TOGGLE ICON */
 
 button:focus {
     outline: none;
 }
 #menu-toggle {
     position: relative;
-
     width: 51px;
     height: 51px;
-
     cursor: pointer;
-
     border: none;
-    -webkit-border-radius: 50px;
-       -moz-border-radius: 50px;
-            border-radius: 50px;
-    background: #fff;
+    border-radius: 100%;
+    background: $menu-bg;
 }
 #menu-toggle:before,
 #menu-toggle:after {
     position: absolute;
-
     content: "";
-    content: "";
-    -webkit-transition: all .5s ease;
-       -moz-transition: all .5s ease;
-         -o-transition: all .5s ease;
-            transition: all .5s ease;
-
-    background-color: #232629;
+    transition: all .5s ease;
+    background-color: $white;
 }
 
 #menu-toggle:before {
     top: 12px;
-    left: 25px;
-
-    width: 1px;
+    left: 24px;
+    width: 3px;
     height: 27px;
 }
 #menu-toggle:after {
-    top: 25px;
+    top: 24px;
     left: 12px;
-
     width: 27px;
-    height: 1px;
+    height: 3px;
 }
 
 body.open button#menu-toggle:before,
 body.open button#menu-toggle:after {
-    -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
+            transform: rotate(135deg);
 }
 /* CONTENT CONTAINER */
 .container {
