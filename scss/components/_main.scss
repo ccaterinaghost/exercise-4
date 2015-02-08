@@ -31,6 +31,7 @@ h2 {
     text-align: center;
     background-color: $menu-bg;
 }
+
 #menu .brand {
     height: 25px;
     font-size: 40px;
@@ -61,6 +62,8 @@ h2 {
 body.open #menu {
     left: 0;
 }
+
+
 /* MAIN PAGE */
 .page-wrap {
     padding: 50px;
@@ -70,6 +73,7 @@ body.open #menu {
 body.open .page-wrap {
     margin-left: 300px;
 }
+
 
 button:focus {
     outline: none;
