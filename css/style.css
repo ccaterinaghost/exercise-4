@@ -1,0 +1,132 @@
+/* line 1, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background-color: #e74c3c; }
+
+/* line 10, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+p {
+  line-height: 1.7; }
+
+/* line 14, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+h2 {
+  margin-top: 30px;
+  font-size: 1.5em;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+/* PUSH MENU */
+/* line 22, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+#menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  transition: all 0.5s ease-out;
+  text-align: center;
+  background-color: #fff; }
+
+/* line 35, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+#menu .brand {
+  height: 25px;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 0.6;
+  color: #ddd;
+  text-transform: uppercase; }
+
+/* line 43, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+#menu ul {
+  padding: 0;
+  margin-top: 30px; }
+
+/* line 48, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+#menu ul li a {
+  display: block;
+  font-weight: 900;
+  line-height: 50px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #232629;
+  border-top: 1px solid #eee; }
+
+/* line 64, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+#menu ul li:last-child a {
+  border-bottom: 1px solid #eee; }
+
+/* line 67, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+#menu ul li a:hover {
+  letter-spacing: 1px; }
+
+/* line 70, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+body.open #menu {
+  left: 0; }
+
+/* MAIN PAGE */
+/* line 74, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+.page-wrap {
+  padding: 50px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in; }
+
+/* line 86, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+body.open .page-wrap {
+  margin-left: 300px; }
+
+/* MENU TOGGLE ICON */
+/* line 92, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+button:focus {
+  outline: none; }
+
+/* line 95, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+#menu-toggle {
+  position: relative;
+  width: 51px;
+  height: 51px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  background: #fff; }
+
+/* line 110, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+#menu-toggle:before, #menu-toggle:after {
+  position: absolute;
+  content: "";
+  content: "";
+  transition: all 0.5s ease;
+  background-color: #232629; }
+
+/* line 123, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+#menu-toggle:before {
+  top: 12px;
+  left: 25px;
+  width: 1px;
+  height: 27px; }
+
+/* line 130, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+#menu-toggle:after {
+  top: 25px;
+  left: 12px;
+  width: 27px;
+  height: 1px; }
+
+/* line 139, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+body.open button#menu-toggle:before, body.open button#menu-toggle:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+/* CONTENT CONTAINER */
+/* line 145, /Users/CaterinaOleary/Documents/School/Graphic Design/year3-2014-15/semester2/webdev/exercise-4/scss/components/main */
+.container {
+  max-width: 600px;
+  min-width: 200px;
+  margin: 0 auto; }
